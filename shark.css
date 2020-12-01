@@ -16,9 +16,9 @@ body img{
 .img_1{
     position: absolute;
     left: -48%;
-    top: -360%;
-    width: 1000px;
-    height: 2400px;
+    top: -400%;
+    width: 900px;
+    height: 2000px;
     border-radius: 0 0 70% 50%;
     opacity: 0.7;
 }
