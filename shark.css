@@ -1,0 +1,175 @@
+body{
+    height: 100vh;
+}
+
+body img{
+    background-color: #FFF;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 20%;
+    border-radius: 28% 50% 0 70%;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.img_1{
+    position: absolute;
+    left: -38%;
+    top: -340%;
+    width: 1000px;
+    height: 2400px;
+    border-radius: 0 0 70% 50%;
+    opacity: 0.7;
+}
+
+.writing{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-transform: uppercase;
+    font-size: 110%;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.shark{
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.home{
+    border: 1px solid #00bcd4;
+    border-radius: 40px;
+    width: 90px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.home:hover{
+    background-color: #00bcd4;
+    transition: 0.8s linear;
+    color: #FFF;
+}
+
+.navbar a{
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.discover{
+    background-color: #00bcd4;
+    padding: 14px;
+    left: 50%;
+    top: 40px;
+    color: #FFF;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.8s linear;
+    border-radius: 40px;
+}
+
+.discover:hover{
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+    background-color: #FFF;
+}
+
+.navbar-nav li{
+    margin-left: 20px;
+}
+
+.writing img{
+    left: -60%;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.writing img:hover{
+    animation: rotateing 1s ease infinite;
+}
+
+@keyframes rotateing{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-brand{
+    /* text-align: center; */
+    position: relative;
+    left: 40%;
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 1100px){
+   body{
+       background: url(backgroundShark.jpg) rgba(4,0,8,0.6) no-repeat center center fixed ;
+  
+       background-blend-mode: multiply;
+   }
+
+    body img{
+        visibility: hidden;
+    }
+
+    .img_1{
+        position: absolute;
+        left: -38%;
+        top: -340%;
+        width: 100px;
+        height: 240px;
+        border-radius: 0 0 70% 50%;
+        opacity: 0.7;
+    }
+
+    .writing{
+        /* position: absolute; */
+        /* position: relative; */
+        top: 300px;
+        text-align: center;
+        width: 80%;
+        text-transform: uppercase;
+        font-size: 110%;
+        letter-spacing: 2px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+
+    .writing img{
+        visibility: hidden;
+    }
+
+    .navbar-brand{
+        /* text-align: center; */
+        position: relative;
+        left: 10%;
+        font-size: 50px;
+    }
+
+    .navbar-toggler{
+        background-color: #00bcd4;
+    }
+
+    .discover{
+        top: 50%;
+        left: 20%;
+    }
+
+    .writing h1{
+        margin: 10px;
+    }
+    .writing p{
+        margin: 20px 20px 40px 20px;
+        color: #FFF;
+    }
+
+    .discover{
+        box-shadow: 0px 0px 24px 6px #00bcd4;
+    }
+}
